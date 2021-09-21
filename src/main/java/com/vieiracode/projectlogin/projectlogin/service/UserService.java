@@ -10,7 +10,7 @@ import com.vieiracode.projectlogin.projectlogin.repository.UserRepository;
 public class UserService {
 
 	private static boolean user;
-
+	public String link = "https://github.com/CR10L02k";
 	@Autowired
 	UserRepository repository;
 
@@ -21,7 +21,7 @@ public class UserService {
 			
 			repository.save(userModel);
 		} else {
-
+			/*Incompleto*/
 			System.out.println("Email já cadastrado!");
 		}
 	}

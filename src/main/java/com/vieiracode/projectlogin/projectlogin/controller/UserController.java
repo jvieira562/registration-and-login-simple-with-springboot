@@ -47,11 +47,11 @@ public class UserController {
 
 		if (userService.getUser()) {
 
-			System.out.println("Entrei no if!");
-			return "redirect:/home";
+			String link = userService.link;
+			return "redirect:" + link;
 		} else {
 
-			System.out.println("Entrei no else");
+			/*Incompleto*/
 			return "redirect:/login";
 		}
 
