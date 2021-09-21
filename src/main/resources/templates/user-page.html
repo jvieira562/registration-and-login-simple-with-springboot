@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Create account</title>
+</head>
+<body>
+		<table>
+			<tr>
+				<td>
+					<h4>Id:</h4>
+				</td>
+				<td>
+					<h4 th:text="${userModel.userId}"></h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h4>Name:</h4>
+				</td>
+				<td>
+					<h4 th:text="${userModel.name}"></h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h4>Email:</h4>
+				</td>
+				<td>
+					<h4 th:text="${userModel.email}"></h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h4>Password:</h4>
+				</td>
+				<td>
+					<h4 th:text="${userModel.password}"></h4>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<td>
+					<a href="/"><input type="button" value=" Home "></input></a>
+				</td>
+			</tr>
+		</table>
+</body>
+</html>
